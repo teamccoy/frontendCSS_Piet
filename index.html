@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piet Mondrian Project</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: black;
+            display: grid;
+            height: 692px;
+            width: 618px;
+            grid-template-columns: 100px 475px 25px;
+            grid-template-rows: 225px 250px 95px 95px;
+            gap: 9px;
+        }
+        .box{
+            background-color: white;
+        }
+        .white1{
+            grid-row: span 1;
+            border-bottom: 10px solid black;
+        }
+        .white2{
+            grid-area: 2 / 1/ 2/ 1;
+        }
+        .red{
+            background-color: red;
+            grid-area: 1 / 2 / 3 / 4;
+        }
+        .blue{
+            background-color: blue;
+            grid-row: span 2;
+        }
+        .white3{
+            grid-row: span 2;
+        }
+        .white4{
+            grid-area: 3/3/3/3;
+            border-bottom: 10px solid black;
+        }
+        .yellow{
+            background-color: yellow;
+            grid-area: 4/3/4/3;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Composition II in Red, Blue and Yellow</h1>
+<div class="container">
+    <div class="box white1"></div>
+    <div class="red"></div>
+    <div class="box white2"></div>
+    <div class="blue"></div>
+    <div class="box white3"></div>
+    <div class="box white4"></div>
+    <div class="yellow"></div>
+</div>
+<h3>Piet Mondrian</h3>
+</body>
+</html>
